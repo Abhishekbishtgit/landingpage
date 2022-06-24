@@ -1,0 +1,167 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.custom-required {
+    padding-right: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.custom-required::after {
+    content: "*";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    color: #ff0000;
+    right: 4px;
+    font-size: 12px;
+}
+
+.br-22 {
+    border-radius: 22px !important;
+}
+
+.br-20 {
+    border-radius: 20px !important;
+}
+
+.br-16 {
+    border-radius: 16px !important;
+}
+
+.icon-para {
+    background: #fafafa;
+    padding: 24px;
+}
+
+.fs-10 {
+    font-size: 10px !important;
+}
+
+.fs-30 {
+    font-size: 30px !important;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.dropdown-toggle::after {
+
+    color: #fff;
+}
+
+.nav-responsive-bg {
+
+    background-color: #fff ! important;
+}
+
+.bg-purple {
+    background: #4739E6 !important;
+
+}
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+.lh-28 {
+    line-height: 28px !important;
+}
+
+.fs-24 {
+    font-size: 24px !important;
+}
+
+.bg-black {
+    background-color: #0A0A0A;
+
+}
+
+.half-a-border-on-top {
+    position: relative;
+}
+
+.half-a-border-on-top:after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 48px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -5px;
+    background: #66ED78;
+}
+
+.support-section {
+    padding: 47px;
+    background: #F5F5FC;
+}
+.ls-1{
+    letter-spacing: 1px !important;
+}
+.fs-40 {
+    font-size: 40px !important;
+}
+
+.fs-30 {
+    font-size: 30px !important;
+}
+
+.fs-54 {
+    font-size: 54px !important;
+}
+
+.fs-22 {
+    font-size: 22px !important;
+}
+
+.hero-section {
+    background: #0B0925;
+    padding-bottom: 74px;
+}
+
+.text-dark-grey {
+    color: #444444 !important
+}
+
+.text-light-grey,
+.footer-sec>li>a {
+    color: #666666 ! important;
+}
+
+.login-shadow {
+    background: linear-gradient(26.84deg, #1D2939 -0.64%, #344054 91.6%);
+    padding: 35px;
+    border-radius: 24px;
+    margin-top: 28px;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #4739E6;
+}
+
+.scrollToTopBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 54px;
+    border: none;
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #4444;
+    display: none;
+    z-index: 999;
+}
