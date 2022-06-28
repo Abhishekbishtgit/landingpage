@@ -134,33 +134,6 @@ ul {
     padding: 32px;
 }
 
-
-
-.hero-section {
-	position: relative;
-}
-.hero-section > img {
-	position: absolute;
-	filter: blur(30px);
-	opacity: 0.35;
-	width: 300px;
-}
-.bg-blur-1 {
-	height: auto;
-	top: 50%;
-	transform: translateY(-80%);
-	mix-blend-mode: exclusion;
-}
-.bg-blur-2 {
-	right: 0;
-	bottom: 0;
-	height: auto;
-	mix-blend-mode: screen;
-}
-.hero-section .card {
-	position: relative;
-	z-index: 1;
-}
 .ls-1 {
     letter-spacing: 1px !important;
 }
