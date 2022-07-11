@@ -10,7 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
@@ -24,92 +26,104 @@
 <body>
     <!-- navbar section start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light pb-5 " style="background: #0B0925;">
-            <a class="navbar-brand  my-auto pr-5 " href="#"> <img src="/asset/images/logo.png" width="28" height="28"
-                    class="d-inline-block rounded " alt=""><small class="font-weight-bold text-light">
-                    Cedcommerce</small>
-            </a>
-            <button class="navbar-toggler nav-responsive-bg" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div style="background: #0B0925;" class="py-2">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light pb-5 ">
+                    <a class="navbar-brand  my-auto pr-4 " href="#"> 
+                       
+                        <img src="asset/images/Logocombo.png"  class=" rounded mr-2 " alt=" ">
+                
+                        
+                    </a>
+                    <button class="navbar-toggler nav-responsive-bg" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item mr-3 ">
-                        <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item mr-3 ">
+                                <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
 
-                    <li class="nav-item dropdown mr-3 ">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-expanded="false">Product</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown mr-3 ">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-expanded="false">Resource</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Pricing</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mr-5 ">
-                    <li class="nav-item mr-2 ">
-                        <a class="nav-link font-weight-bold text-light" href="#">Log in<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-
+                            <li class="nav-item dropdown mr-3 ">
+                                <a class="nav-link  text-light" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">Products<i class="arrow down"></i></a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown mr-3 ">
+                                <a class="nav-link  text-light" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">Resources<i class="arrow down"></i></a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Pricing</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item mr-2 ">
+                                <a class="nav-link fw-600 text-light" href="#">Log in</a>
+                            </li>
 
 
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-primary font-weight-bold bg-purple">Sign Up</button>
-                    </li>
-                </ul>
+
+                            <li class="nav-item">
+                                <button type="button"
+                                    class=" sign-up-btn b-none btn btn-primary fw-600 bg-purple">Sign
+                                    Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
     <!-- navbar section end -->
 
     <!-- first section start -->
     <section>
         <div class="hero-section">
-            <img class="bg-blur-1" src="./asset/images/background-image.png" />
+            <img class="bg-blur-1" src="asset/images/background-image.png" />
             <div class="container mb-5">
                 <div class="row">
                     <div class=" col-sm-12 col-md-12 col-lg-7 col-xl-7 d-flex align-items-center">
                         <div>
                             <div>
-                                <p class=" ls-1 text-light  ">Some small tag line can be written</p>
+                                <p class=" ls-1 text-light lh-24 fw-400">Some small tag line can be written</p>
                             </div>
                             <div class="">
-                                <h1 class=" word-break font-weight-bold fs-54 text-light">Cedcommerce Elixir</h1>
-                                <h1 class="    font-weight-bold  fs-54 pb-2 text-light   ">Supplier Integration</h1>
+                                <h1 class=" fw-600 word-break font-weight-bold fs-50 text-light lh-72">CedCommerce Luxury Distribution Integration</h1>
+
                             </div>
                             <div>
-                                <p class=" text-light   fs-22 pb-3">Create Listing On shopify haslefree! Connect With us
+                                <p class="  fw-500 text-light   fs-20 pb-3 lh-30">Create Listing On shopify haslefree! Connect
+                                    With us
                                     <br>Today!
                                 </p>
                             </div>
                             <div>
-                                <button class="btn btn-light d-flex btn-lg font-weight-bold  pl-3 "><svg aria-hidden="true"
-                                        height="27" viewBox="0 0 16 16" version="1.1" width="20"
-                                        data-view-component="true" class="octicon octicon-play">
-                                        <path fill-rule="evenodd"
-                                            d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z">
-                                        </path>
-                                    </svg> <span class="pl-2 pr-3 "> Lets Get Started</span></button>
+                                <button
+                                    class="btn btn-light b-none d-flex btn-lg font-weight-bold  pl-3 let-button "><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                        fill="none">
+                                        <path
+                                            d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                                            stroke="#252B33" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 7L15 11L9 15V7Z" stroke="#252B33" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg> <span class="pl-2 color-1  fw-600 fs-18 "> Lets Get Started</span></button>
 
                             </div>
                         </div>
@@ -118,44 +132,66 @@
                         <div class="login-shadow">
                             <div class="card shadow-lg   br-16  ">
                                 <div class="card-body px-4">
-                                    <div class="text-center mb-2"><img src="/asset/images/logo.png" width="46" height="46" class="d-inline-block " alt=""></div>
+                                    <div class="text-center mb-2"><img src="asset/images/Logomark.svg" width="46"
+                                            height="46" class="d-inline-block " alt="">
+                                        
+                                            <img src="asset/images/luxury.png" width="40" height="40" class="d-inline-block " alt="">
+                                        </div>
 
-                                    <h4 class="card-title text-center font-weight-bold fs-30">Login</h4>
-                                    <h6 class="card-subtitle mb-4 text-muted text-center">Start your 30 days free trail
+                                    <h4 class="card-title text-center font-weight-bold fs-30 lh-38">Login</h4>
+                                    <h6 class="card-subtitle mb-4 text-muted text-center lh-24">Start your 30 days free
+                                        trail
                                     </h6>
 
                                     <form>
                                         <div class="form-group">
                                             <label class="custom-required" for="exampleInputEmail1">Name</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your name">
+                                            <input type="text" class="form-control input-box-text "
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Enter Your name">
 
                                         </div>
                                         <div class="form-group">
                                             <label class="custom-required" for="exampleInputEmail1">Email
                                             </label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter  Your email">
+                                            <input type="email" class="form-control input-box-text "
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Enter  Your email">
 
                                         </div>
 
-                                        <button type="submit" class="btn btn-primary btn-block mb-3 font-weight-bold bg-purple">Get
+                                        <button type="submit"
+                                            class="btn btn-primary btn-block mb-3 font-weight-bold bg-purple login-get-button ">Get
                                             Started</button>
-                                        <button type="submit" class=" btn btn-outline-secondary btn-block mb-3 "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <button type="submit" class=" btn  btn-block mb-3 login-signup-button"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
                                                 <g clip-path="url(#clip0_297_93518)">
-                                                    <path d="M23.7663 12.2765C23.7663 11.4608 23.7001 10.6406 23.559 9.83813H12.2402V14.4591H18.722C18.453 15.9495 17.5888 17.2679 16.3233 18.1056V21.104H20.1903C22.4611 19.014 23.7663 15.9274 23.7663 12.2765Z" fill="#4285F4"></path>
-                                                    <path d="M12.2401 24.0008C15.4766 24.0008 18.2059 22.9382 20.1945 21.1039L16.3276 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.2401 24.0008Z" fill="#34A853"></path>
-                                                    <path d="M5.50277 14.3002C5.00011 12.8099 5.00011 11.196 5.50277 9.70569V6.61475H1.51674C-0.185266 10.0055 -0.185266 14.0004 1.51674 17.3912L5.50277 14.3002Z" fill="#FBBC04"></path>
-                                                    <path d="M12.2401 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.034466 12.2401 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.61481L5.50264 9.70575C6.45064 6.86173 9.10947 4.74966 12.2401 4.74966Z" fill="#EA4335"></path>
+                                                    <path
+                                                        d="M23.7663 12.2765C23.7663 11.4608 23.7001 10.6406 23.559 9.83813H12.2402V14.4591H18.722C18.453 15.9495 17.5888 17.2679 16.3233 18.1056V21.104H20.1903C22.4611 19.014 23.7663 15.9274 23.7663 12.2765Z"
+                                                        fill="#4285F4"></path>
+                                                    <path
+                                                        d="M12.2401 24.0008C15.4766 24.0008 18.2059 22.9382 20.1945 21.1039L16.3276 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.2401 24.0008Z"
+                                                        fill="#34A853"></path>
+                                                    <path
+                                                        d="M5.50277 14.3002C5.00011 12.8099 5.00011 11.196 5.50277 9.70569V6.61475H1.51674C-0.185266 10.0055 -0.185266 14.0004 1.51674 17.3912L5.50277 14.3002Z"
+                                                        fill="#FBBC04"></path>
+                                                    <path
+                                                        d="M12.2401 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.034466 12.2401 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.61481L5.50264 9.70575C6.45064 6.86173 9.10947 4.74966 12.2401 4.74966Z"
+                                                        fill="#EA4335"></path>
                                                 </g>
                                                 <defs>
                                                     <clipPath id="clip0_297_93518">
                                                         <rect width="24" height="24" fill="white"></rect>
                                                     </clipPath>
                                                 </defs>
-                                            </svg><span class="pl-2">Sign up with
+                                            </svg><span class="pl-13 color-black">Sign up with
                                                 Google</span></button>
-                                        <small id="emailHelp" class="form-text  text-center ml-2 text-muted">Don't have
+                                        <small id="emailHelp"
+                                            class="form-text fs-14  text-center ml-2 text-light-grey">Don't
+                                            have
                                             an
-                                            account ? <span class="text-primary">Sign up</span></small>
+                                            account? <span class="color-dark-bl"><a href="#">Sign up</a></span></small>
                                     </form>
 
                                 </div>
@@ -164,7 +200,7 @@
                     </div>
                 </div>
             </div>
-            <img class="bg-blur-2" src="./asset/images/background-image.png" />
+            <img class="bg-blur-2" src="asset/images/background-image.png" />
         </div>
     </section>
     <!-- first section end -->
@@ -173,16 +209,17 @@
     <section>
         <div class="container ">
             <div class="row ">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center mt-5  ">
-                    <div class="mt-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center mt-80  ">
+                   
                         <div>
-                            <h2 class=" pb-3 font-weight-bold half-a-border-on-top fs-40">Features</h2>
-                            <h5 class="text-dark-grey fs-18 pb-3  text-center mb-60">Spend smarter, lower your bills,
+                            <h2 class=" lh-44 font-weight-bold half-a-border-on-top fs-40">Features</h2>
+                            <h5 class="text-dark-grey fs-18 pb-3 lh-30  text-center mb-60">Spend smarter, lower your
+                                bills,
                                 get cashback
                                 on everything you buy, and unlock credit<br> to grow your business.<p></p>
                             </h5>
                         </div>
-                    </div>
+                    
                 </div>
 
 
@@ -198,7 +235,7 @@
         <div class="container">
             <div class="row  ">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5  ">
-                    <div class=" mb-5 position-rel ">
+                    <div class=" ">
 
 
                         <div class=" pb-2 text-center fs-30 feature-icon">
@@ -228,8 +265,8 @@
                         </div>
                         <div class="icon-para ">
 
-                            <h6 class="font-weight-bold text-center fs-20">Product Upload:</h6>
-                            <p class="text-light-grey text-center"> All products from the Elixir are imported into our
+                            <h6 class=" text-center fw-600 text-dark-grey fs-20">Product Upload:</h6>
+                            <p class="text-light-grey text-center fw-400"> All products from the Elixir are imported into our
                                 app. From there you can upload products to your Shopify store.
                             </p>
                         </div>
@@ -237,7 +274,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5  ">
-                    <div class=" mb-5 position rel ">
+                    <div class="  ">
 
                         <div class=" pb-2 text-center fs-30 feature-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56"
@@ -262,16 +299,16 @@
                         </div>
                         <div class="icon-para ">
 
-                            <h6 class="font-weight-bold text-center fs-20">Price Markup</h6>
-                            <p class="text-light-grey  text-center">You understand the perfect pricing bar for your
-                                items, just take it to the edge to maximize your margins by <a href="#"
-                                    target="_blank"><u>more</u></a></p>
+                            <h6 class="text-center  fw-600 text-dark-grey fs-20">Price Markup</h6>
+                            <p class="text-light-grey fw-400 text-center">You understand the perfect pricing bar for your
+                                items, just take it to the edge to maximize your margins by<span id="dots"></span> <span id="more1">increasing it by a fixed amount or by a percentage.</span> <button onclick="mybtn1()" id="myBtn1"><u>more</u></button></p>
+                               
                         </div>
 
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5  ">
-                    <div class=" mb-5 position-rel  ">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 ">
+                    <div class="   ">
                         <div class=" pb-2 text-center fs-30 feature-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56"
                                 fill="none">
@@ -296,16 +333,15 @@
 
                         <div class="icon-para ">
 
-                            <h6 class="font-weight-bold text-center fs-20">Near Real-Time sync </h6>
-                            <p class="text-light-grey  text-center">You sure don't want the old data on your site,
-                                neither you want your hands getting dirty doing it, and we don't want <a href="#"
-                                    target="_blank"><u>more</u></a></p>
+                            <h6 class="text-center fs-20  fw-600 text-dark-grey">Near Real-Time sync </h6>
+                            <p class="text-light-grey  text-center fw-400">You sure don't want the old data on your site,
+                                neither you want your hands getting dirty doing it, and we don't want<span id="dots"></span> <span id="more2">it to, just update all the information updated all the time.</span> <button onclick="mybtn2()" id="myBtn2"><u>more</u></button></p>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  mb-5 ">
-                    <div class=" mb-5 position-rel ">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 ">
+                    <div>
 
                         <div class=" pb-2 text-center fs-30 feature-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="43" height="47" viewBox="0 0 43 47"
@@ -341,16 +377,15 @@
                         </div>
                         <div class="icon-para ">
 
-                            <h6 class="font-weight-bold text-center fs-20">Order management</h6>
-                            <p class="text-light-grey text-center">Any order which is placed on Shopify is automatically
-                                created and processed to the suppliers. Elixir team carries out <a href="#"
-                                    target="_blank"><u>more</u></a></p>
+                            <h6 class="text-center fs-20  fw-600 text-dark-grey">Order management</h6>
+                            <p class="text-light-grey  fw-400 text-center">Any order which is placed on Shopify is automatically
+                                created and processed to the suppliers. Elixir team carries out<span id="dots"></span> <span id="more3">a fast and monitored shipment of the product to you using DHL worldwide express delivery with delivery times ranging from 2-5 Working days.</span> <button onclick="mybtn3()" id="myBtn3"><u>more</u></button></p>
                         </div>
 
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  mb-5 ">
-                    <div class=" mb-5 positon-rel ">
+                    <div class="  ">
                         <div class=" pb-2 text-center fs-30 feature-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56"
                                 fill="none">
@@ -383,16 +418,15 @@
 
                         <div class="icon-para ">
 
-                            <h6 class="font-weight-bold text-center fs-20">Advanced Search Filter</h6>
-                            <p class="text-light-grey text-center">When you get results, with minimal efforts possible-
-                                Get all your searches popped in a fraction of seconds <a href="#"
-                                    target="_blank"><u>more</u></a></p>
+                            <h6 class="text-center fs-20  fw-600 text-dark-grey">Advanced Search Filter</h6>
+                            <p class="text-light-grey text-center fw-400">When you get results, with minimal efforts possible-
+                                Get all your searches popped in a fraction of seconds <span id="dots"></span><span id="more4">We know you are short of time and so have we expanded the reach of your search. Get results based on “brands”, “category” and a lot more filters.</span> <button onclick="mybtn4()" id="myBtn4"><u>more</u></button></p>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5  ">
-                    <div class=" mb-5 position-rel  ">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 ">
+                    <div class=" ">
                         <div class=" pb-2 text-center fs-30 feature-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57"
                                 fill="none">
@@ -457,9 +491,9 @@
 
                         <div class="icon-para ">
 
-                            <h6 class="font-weight-bold text-center fs-20">Currency Converter</h6>
-                            <p class="text-light-grey  text-center">In the app, you can convert the price as per your
-                                Shopify store currency.<a href="#" target="_blank"><u>more</u></a></p>
+                            <h6 class="text-center fs-20  fw-600 text-dark-grey">Currency Converter</h6>
+                            <p class="text-light-grey fw-400 text-center">In the app, you can convert the price as per your
+                                Shopify store currency.</p>
                         </div>
 
                     </div>
@@ -477,11 +511,12 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center  ">
                     <div class="mt-5">
                         <div>
-                            <h2 class=" pb-3 font-weight-bold half-a-border-on-top fs-40">Why should I Integrate with
+                            <h2 class=" lh-44 font-weight-bold half-a-border-on-top fs-40">Why should I Integrate with
                                 API?
 
                             </h2>
-                            <h5 class="text-dark-grey  fs-18 pb-3  text-center ">Spend smarter, lower your bills, get
+                            <h5 class="text-dark-grey  fw-400 lh-30 fs-18 pb-3  text-center ">Spend smarter, lower your bills,
+                                get
                                 cashback
                                 on everything you buy, and<br> unlock credit to grow your business.<p></p>
                             </h5>
@@ -498,32 +533,31 @@
 
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  ">
-                    <img src="/asset/images/api.png" width="700" height="500" class="img-fluid br-12" alt="">
+                    <img src="asset/images/api.png" class="img-fluid br-12" alt="">
                     <div class=" mb-5  ">
 
-                        <div class=" pt-2">
-                            <h5 class="font-weight-bold  fs-24">Application Programming Interface</h5>
-                            <p class="text-light-grey fs-18 lh-28">Although not required for all stores, these APIs are
+                        <div class=" pt-5">
+                            <h5 class="font-weight-bold text-dark-grey fs-24">Application Programming Interface</h5>
+                            <p class="text-light-grey fs-18 lh-28 fw-400">Although not required for all stores, these APIs are
                                 a
                                 must for eCommerce development, particularly for stores that rely on their orders to be
                                 fulfilled by their suppliers to use API integrations to connect with suppliers and
-                                automate the order fulfillment process. Drop-shipping eCommerce stores <a href="#"
-                                    target="_blank"><u>more.</u></a></p>
+                                automate the order fulfillment process. Drop-shipping eCommerce stores <span id="dots"></span> <span id="more6">also use this model to operate their business successfully.</span> <button onclick="mybtn6()" id="myBtn6"><u>more</u></button></p>
                         </div>
 
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  ">
-                    <img src="/asset/images/integration.jpg" width="700" height="500" class="img-fluid br-12" alt="">
+                    <img src="asset/images/integration.jpg" class="img-fluid br-12" alt="">
 
                     <div class=" mb-5  ">
 
-                        <div class=" pt-2">
-                            <h5 class="font-weight-bold  fs-24">Integration</h5>
-                            <p class="text-light-grey fs-18 lh-28 ">Integrating with suppliers through APIs reduces any
-                                manual order handling and completely automates the sales fulfillment cycle.
+                        <div class=" pt-30">
+                            <h5 class="font-weight-bold text-dark-grey fs-24">Integration</h5>
+                            <p class="text-light-grey fs-18 lh-28 fw-400">Integrating with suppliers through APIs reduces any
+                                manual order handling and completely automates the sales fulfillment cycle.<br>
                                 Almost every large supplier, whether it is a manufacturer or distributor nowadays,
-                                irrespective of the product <a href="#" target="_blank"><u>more</u></a></p>
+                                irrespective of the product  <span id="dots"></span> <span id="more7">, has developed APIs. They provide access to their APIs for retailers or wholesalers to integrate and sell their products by listing them on their eCommerce store. A very popular example is Alibaba.</span> <button onclick="mybtn7()" id="myBtn7"><u>more</u></button></p>
                         </div>
 
                     </div>
@@ -539,46 +573,122 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center  ">
                     <div class=" support-section mt-5 br-16">
                         <div>
-                            <img src="/asset/images/support.png" width="128" height="67"
+                            <img src="asset/images/Avatar group.svg" width="129" height=""
                                 class="d-inline-block img-fuild " alt="">
 
 
 
-                            <h2 class=" pb-3 font-weight-bold fs-20 mt-4 ">Support</h2>
-                            <h5 class="text-dark-grey   text-center ">Knock our door anytime to get complete guidance
+                            <h2 class="  fw-600 fs-20 mt-4 lh-30 ">Support</h2>
+                            <h5 class="text-dark-grey  fw-400 text-center ml-4 lh-28">Knock our door anytime to get complete
+                                guidance
                                 and become a lead.<p></p>
                             </h5>
                             <div>
-                                <div class="container">
-                                    <div class="row  mt-4 pl-4 justify-content-center ">
-                                        <div class="col-lg-2 col-sm-12 pb-2 ">
-                                            <button type="button"
-                                                class="btn btn-info btn-block font-weight-bold bg-purple "><i
-                                                    class="fa fa-skype pr-1 fs-20"></i>Skype</button>
-                                        </div>
-                                        <div class="col-lg-2 col-sm-12 pb-2  ">
-                                            <button type="button"
-                                                class="btn btn-info btn-block font-weight-bold bg-purple "><i
-                                                    class="fa fa-phone pr-1 fs-20"></i>Call Us</button>
-                                        </div>
-                                        <div class="col-lg-3 col-sm-12 pb-2 ">
-                                            <button type="button"
-                                                class="btn btn-info btn-block font-weight-bold bg-purple  "><i
-                                                    class="fa fa-envelope-open-o pr-1 fs-20"></i>Email Us </button>
-                                        </div>
-                                        <div class="col-lg-3 col-sm-12 pb-2 ">
-                                            <button type="button"
-                                                class="btn btn-info btn-block font-weight-bold bg-purple  "><i
-                                                    class="fa fa-ticket pr-1 fs-20"></i>Raise a Tickets</button>
-                                        </div>
+                                
 
+
+
+                                    <div class=" support-btn mt-4 ">
+                                        <button type="button"
+                                            class=" b-none align-items-center   font-weight-bold fs-16 btn-1 btn btn-info  font-weight-bold bg-purple ">
+
+                                            <div class="support-icon-btn">
+
+                                                <div> <img src="asset/images/skype.svg" width="21" height="26"></div>
+                                                <div> Skype</div>
+
+                                            </div>
+                                        </button>
+                                        <button type="button"
+                                            class="  b-none align-items-center   btn fs-16 p-btn-2 btn-1 btn-info  font-weight-bold bg-purple ">
+
+
+
+                                            <div class="support-icon-btn">
+
+                                                <div> <img src="asset/images/phone.svg">
+                                                </div>
+                                                <div> Call Us</div>
+                                            </div>
+
+                                        </button>
+
+                                        <button type="button"
+                                        class=" b-none align-items-center  btn fs-16 p-btn-3 btn-1 btn-info font-weight-bold bg-purple  ">
+
+                                        <div class="support-icon-btn">
+
+                                            <div> <img src="asset/images/Message.svg">
+                                            </div>
+                                            <div> Email Us</div>
+                                        </div>
+                                    </button>
+                                    <button type="button"
+                                    class=" b-none align-items-center  btn btn-1 fs-16 p-btn-4 btn-info  font-weight-bold bg-purple  ">
+                                    <div class="support-icon-btn">
+
+                                        <div> <img src="asset/images/Solid.svg">
+                                        </div>
+                                        <div> Raise a Tickets</div>
                                     </div>
-                                </div>
+                                </button>
 
+                                        <!-- <div class="col-7 col-md-3 col-lg-2 mb-2 mb-lg-0 ">
+                                            <button type="button"
+                                                class=" b-none align-items-center   font-weight-bold fs-16 btn-1 btn btn-info  font-weight-bold bg-purple ">
+
+                                                <div class="support-icon-btn">
+
+                                                    <div> <img src="asset/images/skype.svg" width="21" height="26"></div>
+                                                        <div> Skype</div>
+                                                    
+                                                </div>
+                                            </button>
+                                        </div> -->
+                                        <!-- <div class="col-7 col-md-3 col-lg-2 mb-2 mb-lg-0   ">
+                                            <button type="button"
+                                                class="  b-none align-items-center   btn fs-16 p-btn-2 btn-1 btn-info  font-weight-bold bg-purple ">
+
+
+
+                                                <div class="support-icon-btn">
+
+                                                    <div> <img src="asset/images/phone.svg">
+                                                    </div>
+                                                    <div> Call Us</div>
+                                                </div>
+
+                                            </button>
+                                        </div> -->
+                                        <!-- <div class="col-7 col-md-3 col-lg-2 mb-2 mb-lg-0  ">
+                                            <button type="button"
+                                                class=" b-none align-items-center  btn fs-16 p-btn-3 btn-1 btn-info font-weight-bold bg-purple  ">
+
+                                                <div class="support-icon-btn">
+
+                                                    <div> <img src="asset/images/Message.svg">
+                                                    </div>
+                                                    <div> Email Us</div>
+                                                </div>
+                                            </button>
+                                        </div> -->
+                                        <!-- <div class="col-7 col-md-3 col-lg-3 mb-2 mb-lg-0   ">
+                                            <button type="button"
+                                                class=" b-none align-items-center  btn btn-1 fs-16 p-btn-4 btn-info  font-weight-bold bg-purple  ">
+                                                <div class="support-icon-btn">
+
+                                                    <div> <img src="asset/images/Solid.svg">
+                                                    </div>
+                                                    <div> Raise a Tickets</div>
+                                                </div>
+                                            </button>
+                                        </div> -->
+
+                                
+                                </div>
                             </div>
                         </div>
                     </div>
-
 
 
                 </div>
@@ -801,6 +911,6 @@
     </footer>
 </body>
 
-<script src="/asset/js/landing.js"> </script>
+<script src="asset/js/landing.js"> </script>
 
 </html>
